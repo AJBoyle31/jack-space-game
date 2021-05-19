@@ -29,6 +29,10 @@ _global_script_class_icons={
 config/name="Space Fighter"
 config/icon="res://icon.png"
 
+[autoload]
+
+Score="*res://HUD/Score.tscn"
+
 [display]
 
 window/size/test_width=1024

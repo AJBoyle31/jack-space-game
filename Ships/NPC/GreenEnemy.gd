@@ -8,6 +8,7 @@ export var move_enemy: bool = true
 
 var velocity := Vector2.ZERO
 var direction := 1
+var score = Score
 
 func _ready():
 	if not move_enemy:
@@ -25,13 +26,14 @@ func fire_laser():
 	world.add_child(laser_shot)
 
 
-func _on_LaserTimer_timeout():
+func _on_LaserTimer_timeout() -> void:
 	fire_laser()
 
 
-func _on_MovementTimer_timeout():
+func _on_MovementTimer_timeout() -> void:
 	direction *= -1
 
 
-func _on_HurtBox_area_entered(area):
+func _on_HurtBox_area_entered(area) -> void:
+	score.myScore += 10
 	queue_free()
