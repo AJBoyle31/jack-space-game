@@ -26,7 +26,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Space Fighter"
+config/name="Jack Space Game"
 config/icon="res://icon.png"
 
 [autoload]

@@ -30,6 +30,7 @@ position = Vector2( 0, -28 )
 texture = ExtResource( 3 )
 
 [node name="LaserTimer" type="Timer" parent="." index="3"]
+wait_time = 2.0
 autostart = true
 
 [node name="MovementTimer" type="Timer" parent="." index="4"]
